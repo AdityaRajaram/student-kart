@@ -1,0 +1,252 @@
+<!-- Full Page Intro -->
+<div class="view" data-aos="slide-right" dat-aos-duration="2000">
+    <video class="video-intro" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg" playsinline autoplay
+        muted loop>
+        <source src="/vid/vi.mp4" type="video/mp4">
+    </video>
+    <div class="container">
+        <div class="mask rgba-black-light">
+            <!-- Content -->
+            <div class="content-video text-center d-none d-md-block">
+                <h1 class="display-5 mb-4 text-warning">
+                    <strong>Sell or Buy Books/Sports Items</strong>
+                </h1>
+                <h4 class="mb-4">
+                    <strong class="text-danger text-capitalize">We Provide Online second Hand or New Book/Sports Items
+                        buying and selling
+                        services.</strong>
+                </h4>
+                <h4 class="mb-4 d-none d-md-block">
+                    <p class="quote text-capitalize">you can't buy happiness but you can buy books</p>
+                </h4>
+                {{#unless user}}
+                <a href="/login" class="btn btn-outline-light font-weight-bold">Login
+                    <i class="fas fa-sign-in-alt"></i>
+                </a>
+                {{/unless}}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-white mt-md-4">
+    <div class="display-4 text-center text-success">Book Services</div>
+    <hr>
+    <div class="row mt-md-4">
+        <div class="col-md-4 mb-4 text-center">
+            <a href="/rental/take" class="text-white">
+                <i class="fas fa-truck-pickup fa-3x"></i>
+                <h3 class="font-weight-bold">Rental Books</h3>
+            </a>
+            <p class="h5">We provide Books for rental price per day basis, You can book a Book or give your books on </p>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="/books/sell" class="text-white">
+                <i class="fas fa-truck-loading fa-3x"></i>
+                <h3 class="font-weight-bold">Sell Books</h3>
+            </a>
+            <p class="h5">Sell Your old Books with us, we provide various kinds of user which are ready to buy old books.</p>
+        </div>
+
+        <div class="col-md-4 mb-4 text-center">
+            <a href="/books/buy" class="text-white">
+                <i class="fas fa-cart-plus fa-3x mb-2"></i>
+                <h3 class="font-weight-bold">Buy Books</h3>
+            </a>
+            <p class="h5">Buy Second and First hand books from us, we give good amount of discounts and exact value.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container text-white mt-md-4">
+    <div class="display-4 text-center text-success">Book Rental Services</div>
+    <hr>
+    <div class="row mt-md-4">
+        <div class="col-md-6 mb-4 text-center">
+            <a href="/rental/give" class="text-white">
+                <i class="fas fa-hand-holding-usd fa-3x"></i>
+                <h3 class="font-weight-bold">Give For Rent</h3>
+            </a>
+            <p class="h5">Give Books For Rent Which will Taken by another.</p>
+        </div>
+
+        <div class="col-md-6 mb-4 text-center">
+            <a href="/rental/take" class="text-white">
+                <i class="fas fa-handshake fa-3x"></i>
+                <h3 class="font-weight-bold">Take For Rent</h3>
+            </a>
+            <p class="h5">You can take the book on rent on weekly basics.</p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="parallax1 d-none d-md-block">
+    <div class="container">
+        <div class="content-image text-center">
+            {{#unless user}}
+            <h3 class="text-capitalize text-custom">Register with us to take books on rental, sell or buy.</h3>
+            <a href="/register" class="btn btn-success font-weight-bold">Register
+                <i class="fa fa-registered" aria-hidden="true"></i>
+            </a>
+            {{/unless}}
+            {{#if user}}
+            <h4 class="text-capitalize h2 font-weight-bold text-light">Utilize Company Services.</h4>
+            <p class="text-light h4">Thanks For Being With Us.</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
+<hr>
+
+<div class="container text-white mt-md-4">
+    <div class="display-4 text-center text-success">Sports Services</div>
+    <hr>
+    <div class="row mt-md-4">
+        <div class="col-md-6 mb-4 text-center">
+            <a href="/sports/buy" class="text-white">
+                <i class="fas fa-baseball-ball fa-3x"></i>
+                <h3 class="font-weight-bold">Buy Items</h3>
+            </a>
+            <p class="h5">Buy Second and First hand Sports Item from us, we give good amount of discounts and exact value.</p>
+        </div>
+
+        <div class="col-md-6 mb-4 text-center">
+            <a href="/sports/sell" class="text-white">
+                <i class="fas fa-table-tennis fa-3x"></i>
+                <h3 class="font-weight-bold">Sell Second Hand Items</h3>
+            </a>
+            <p class="h5">Sell Your old Sports Item with us, we provide various kinds of user which are ready to buy old Sports Items.</p>
+        </div>
+    </div>
+</div>
+
+<div class="animation">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,200,255,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(200,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,100,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#52de97" />
+            <use xlink:href="#gentle-wave" x="48" y="10" fill="#c70d3a" />
+        </g>
+    </svg>
+
+</div>
+
+<section id="authors" class="my-5 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="info-header mb-5">
+                    <h1 class="text-custom font-weight-bold pb-3">
+                        Meet the Owners
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                <div class="card border-info">
+                    <div class="card-body">
+                        <img src="img/binu.jpg" alt="" class="img-fluid top rounded-circle w-50 mb-3">
+                        <h3>Binu Kumar</h3>
+                        <h5 class="text-muted">Manager</h5>
+                        <p class="h5">
+                            Binu is responsible for managing all the Technical and non-technical related Issues.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://linkedin.com"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="card border-success">
+                    <div class="card-body">
+                        <img src="img/adi.jpg" alt="" class="img-fluid top rounded-circle w-50 mb-3">
+                        <h3>Aditya Rajaram</h3>
+                        <h5 class="text-muted">Marketing Director</h5>
+                        <p class="h5">Aditya is responsible for marketing related and any kind of customer related Issues.</p>
+                        <div class="d-flex justify-content-center">
+                            <div class="p-4">
+                                <a href="http://facebook.com">
+                                    <i class="fab fa-facebook" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="p-4">
+                                <a href="http://linkedin.com"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="testimonial" class="bg-info p-4 text-dark">
+    <div class="container">
+        <h2 class="text-center">Testimonials</h2>
+        <div class="row text-center">
+            <div class="col">
+                <div class="slider">
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                                This website is very good to get Students. they have provided students to may features to make student life easier.
+                            </p>
+                            <footer class="blockquote-footer">
+                                sri hari narayan
+                                <cite class="company-1">SJCE</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                                This website is awesome for getting Books of anykind and they will also
+                                respond to anykind of your complaints.
+                            </p>
+                            <footer class="blockquote-footer">
+                                sri narayan
+                                <cite class="company-1">CSS</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+
+                    <div>
+                        <blockquote class="blockquote">
+                            <p class="mb-0">
+                                Very good to website to sell and buy new or old Books.
+                            </p>
+                            <footer class="blockquote-footer">
+                                sri hari
+                                <cite class="company-1">PCS</cite>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

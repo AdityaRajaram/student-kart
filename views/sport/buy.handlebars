@@ -1,0 +1,50 @@
+<div class="m-5">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-8 m-auto">
+            <form class="form-inline" action="/sports/search" method="post">
+                <input class="form-control mr-sm-2" type="search" name='search' placeholder="Search by Item name">
+                <button class="btn btn-outline-success btn-block-sm my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+        <hr>
+    </div>
+    <div class="row">
+        {{#each sports}}
+        <div class="col-md-6 col-lg-4 mt-4">
+            <div id="sport-card" class="card">
+                {{#if (Icon ../user.id user)}}
+                <div class="header">
+                    <div class="d-inline delete">
+                        <form action="/sports/{{id}}?_method=DELETE" method="post">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+                        </form>
+                    </div>
+                    <div class="d-inline buy">
+                        <a href="/sports/edit/{{id}}" class="btn btn-info"><i class="fa fa-pen"></i></a>
+                    </div>
+                </div>
+                {{/if}}
+                <div id="sport-image" class="card-text">
+                    <a href="/sports/{{id}}">
+                        <img src="{{image}}" class="img-fluid sport-img">
+                    </a>
+                </div>
+                <div class="card-body text-center text-dark">
+                    <p class="h4 text-danger">{{name}}</p>
+                    <p class="h5">{{company}}</p>
+                    <p class="text-success">₹ {{price}}</p>
+                </div>
+                <div class="card-footer text-center">
+                    <a href="/sports/{{id}}" class="btn font-weight-bold btn-outline-success">More info</a>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <div class="col-md-10 m-auto">
+            <h4 class="text-success text-center mt-4">NO Sport Items Founds (- , -)</h4>
+        </div>
+        {{/each}}
+    </div>
+</div>
